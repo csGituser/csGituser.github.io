@@ -154,6 +154,160 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-蓝牙模块HC-05的使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/14/%E8%93%9D%E7%89%99%E6%A8%A1%E5%9D%97HC-05%E7%9A%84%E4%BD%BF%E7%94%A8/">蓝牙模块HC-05的使用</a>
+    </h1>
+  
+
+        
+        <a href="/2020/02/14/%E8%93%9D%E7%89%99%E6%A8%A1%E5%9D%97HC-05%E7%9A%84%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+  	<time datetime="2020-02-14T03:19:37.941Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="蓝牙模块HC-05的使用"><a href="#蓝牙模块HC-05的使用" class="headerlink" title="蓝牙模块HC-05的使用"></a>蓝牙模块HC-05的使用</h1><p>将蓝牙模块HC-05插入测试架之后用数据线连接电脑，之后：</p>
+<p>1、打开汇承蓝牙串口助手HID.exe</p>
+<p>2、选择HC-05模块</p>
+<p>3、长按测试架上的按钮。进入AT指令模式</p>
+<p>4、测试发送指令是否成功，若返回OK则表明蓝牙模块连接电脑成功</p>
+<p>5、接下来便可以打开手机的HC蓝牙软件，进行与蓝牙模块的通信。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/02/14/%E8%93%9D%E7%89%99%E6%A8%A1%E5%9D%97HC-05%E7%9A%84%E4%BD%BF%E7%94%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-微信小程序布局" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/14/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%B8%83%E5%B1%80/">微信小程序布局</a>
+    </h1>
+  
+
+        
+        <a href="/2020/02/14/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%B8%83%E5%B1%80/" class="archive-article-date">
+  	<time datetime="2020-02-14T03:11:55.884Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="微信小程序布局"><a href="#微信小程序布局" class="headerlink" title="微信小程序布局"></a>微信小程序布局</h1><h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><p>position</p>
+<p>relative–相对于自己之前的位置进行偏移</p>
+<p>absolute–相对于最近的自己的父级非static元素偏移</p>
+<p>fixed–相对于屏幕 进行偏移，如底部的tabbar</p>
+<h1 id="container不能作为元素的属性名！！！！！"><a href="#container不能作为元素的属性名！！！！！" class="headerlink" title="container不能作为元素的属性名！！！！！"></a><b><em>container不能作为元素的属性名！！！！！</em></b></h1><h1 id="小程序目录结构"><a href="#小程序目录结构" class="headerlink" title="小程序目录结构"></a>小程序目录结构</h1><p>微信小程序的目录分为全局的文件与局部的页面文件</p>
+<h2 id="全局文件"><a href="#全局文件" class="headerlink" title="全局文件"></a>全局文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">app.js    &#x2F;&#x2F;定义全局的js文件，此文件可在各个具体的页面的js文件中引入，用 var app&#x3D;getApp();将全局的js文件引入，同时各个独立的具体的页面由于相互之间不能直接通信，也可以借助全局js文件作为中间桥梁，通过将某个具体的页面中的数据传入到全局js文件的某个变量中，进而在另外的页面将此全局文件引入从而实现两个独立的页面之间的通信。</span><br><span class="line">app.json   &#x2F;&#x2F; 此文件用来给每个具体页面在小程序中进行注册，同时也可以在此文件中定义小程序的标题的颜色，字体颜色等信息。</span><br><span class="line"></span><br><span class="line">app.wxss   &#x2F;&#x2F; 此文件用来定义小程序全局的css样式，当小程序的各个页面需要定义相同的样式时，此时可以将此样式文件定义在此文件中，</span><br><span class="line">sitmmap.json  &#x2F;&#x2F;此文件点开有详细介绍。</span><br></pre></td></tr></table></figure>
+
+<h2 id="局部页面文件（pages）"><a href="#局部页面文件（pages）" class="headerlink" title="局部页面文件（pages）"></a>局部页面文件（pages）</h2><p>每个页面在app. json文件中进行注册时，小程序会自动生成诸如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">index.wxml     &#x2F;&#x2F; 此文件类似于HTML用来写每个页面的骨架</span><br><span class="line">index.wxss   &#x2F;&#x2F; 此文件类似于css，用来对页面的组件进行美化</span><br><span class="line">index.js   &#x2F;&#x2F; 此文件用来对页面中的操作进行响应</span><br><span class="line">index,json  &#x2F;&#x2F;此文件用来对页面引入一些组件</span><br></pre></td></tr></table></figure>
+
+<p>此段学习中学到的东西主要是一些排版的技巧，诸如flex布局，以及一些相对布局，绝对布局的东西，以及对组件，页面，定义样式。如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">page</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    overflow: hidden;     //用来将页面设置成与手机屏幕等高，溢出的部分自动隐藏，若不想page中的某些元素被隐藏，可以设置此子元素的height属性，使其与页面等高，从而子元素会自动压缩适应整个页面。</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.class-name</span>&#123;</span><br><span class="line">    color: red;       // 此属性中的文字的颜色</span><br><span class="line">    <span class="selector-tag">margin-top</span>: 6<span class="selector-tag">rpx</span>;</span><br><span class="line">    <span class="selector-tag">padding-right</span>: 10<span class="selector-tag">rpx</span>;</span><br><span class="line">    <span class="selector-tag">line-height</span>: 2;</span><br><span class="line">    <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-tag">green</span>;</span><br><span class="line">    <span class="selector-tag">text-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line">    <span class="selector-tag">vertical-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">.container&#123;       // 注意container不能作为属性名，在微信小程序中。</span><br><span class="line">    <span class="selector-tag">display</span>: <span class="selector-tag">flex</span>;</span><br><span class="line">    <span class="selector-tag">flex-direction</span>: <span class="selector-tag">column</span>;</span><br><span class="line">    <span class="selector-tag">justify-content</span>: <span class="selector-tag">middle</span>;</span><br><span class="line">    //   此部分的内容可看flex布局部分的思维导图</span><br><span class="line">    //   那些属性是对父容器进行设置的，那些属性是对里面的每一个items进行设置的，以及每一个属性会对父容器以及子容器产生什么影响，都可看思维导图部分。</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span>, <span class="selector-class">.items</span>&#123;</span><br><span class="line">    //用逗号同时对多个className进行属性设置。</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-tag">view</span>&#123;</span><br><span class="line">    //用来选中container容器下的view标签</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span><span class="selector-attr">[type]</span>&#123;</span><br><span class="line">    //用来选中container标签的type属性</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">布局总结</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/02/14/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%B8%83%E5%B1%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-布局王者flex" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1179,11 +1333,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">微信minigramDemo</a>
+                <a href="javascript:void(0)" class="js-tag color5">布局总结</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">智能小车</a>
+                <a href="javascript:void(0)" class="js-tag color1">微信小程序，我的名片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">微信minigramDemo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1191,7 +1349,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">微信小程序，我的名片</a>
+                <a href="javascript:void(0)" class="js-tag color5">智能小车</a>
               </li>
             
             <div class="clearfix"></div>
