@@ -18,8 +18,8 @@
   
     <meta name="description" content="机器学习：准确率、召回率、F值、ROC曲线、PR曲线 增注：虽然当时看这篇文章的时候感觉很不错，但是还是写在前面，想要了解关于机器学习度量的几个尺度，建议大家直接看周志华老师的西瓜书的第2章：模型评估与选择，写的是真的很好！！ 摘要： 数据挖掘、机器学习和推荐系统中的评测指标—准确率(Precision)、召回率(Recall)、F值(F-Measure)简介。 引言： 在机器学习、数据挖掘、推">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Museum">
-<meta property="og:url" content="http://csgituser.github.io/2023/07/13/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%9A%E5%87%86%E7%A1%AE%E7%8E%87(Precision)%E3%80%81%E5%8F%AC%E5%9B%9E%E7%8E%87(Recall)%E3%80%81F%E5%80%BC(F-Measure)%E3%80%81ROC%E6%9B%B2%E7%BA%BF%E3%80%81PR%E6%9B%B2%E7%BA%BF/index.html">
+<meta property="og:title" content="机器学习：准确率、召回率、F值、ROC曲线、PR曲线">
+<meta property="og:url" content="http://csgituser.github.io/2023/05/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%9A%E5%87%86%E7%A1%AE%E7%8E%87(Precision)%E3%80%81%E5%8F%AC%E5%9B%9E%E7%8E%87(Recall)%E3%80%81F%E5%80%BC(F-Measure)%E3%80%81ROC%E6%9B%B2%E7%BA%BF%E3%80%81PR%E6%9B%B2%E7%BA%BF/index.html">
 <meta property="og:site_name" content="Museum">
 <meta property="og:description" content="机器学习：准确率、召回率、F值、ROC曲线、PR曲线 增注：虽然当时看这篇文章的时候感觉很不错，但是还是写在前面，想要了解关于机器学习度量的几个尺度，建议大家直接看周志华老师的西瓜书的第2章：模型评估与选择，写的是真的很好！！ 摘要： 数据挖掘、机器学习和推荐系统中的评测指标—准确率(Precision)、召回率(Recall)、F值(F-Measure)简介。 引言： 在机器学习、数据挖掘、推">
 <meta property="og:locale" content="en_US">
@@ -29,13 +29,14 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/csGituser/blogImages/Images/1a833209bcf62eac3c6a81f62d3166de.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/csGituser/blogImages/Images/c4b049e9956857ca0eb8524dec88f812.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/csGituser/blogImages/Images/46ab9388e29b88fbbff303a460166b4d.png">
-<meta property="og:image" content="http://csgituser.github.io/2023/07/13/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%9A%E5%87%86%E7%A1%AE%E7%8E%87(Precision)%E3%80%81%E5%8F%AC%E5%9B%9E%E7%8E%87(Recall)%E3%80%81F%E5%80%BC(F-Measure)%E3%80%81ROC%E6%9B%B2%E7%BA%BF%E3%80%81PR%E6%9B%B2%E7%BA%BF/assets/bc0ca07b6b06f0e4971268c0a3c275de.png">
+<meta property="og:image" content="http://csgituser.github.io/2023/05/08/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%9A%E5%87%86%E7%A1%AE%E7%8E%87(Precision)%E3%80%81%E5%8F%AC%E5%9B%9E%E7%8E%87(Recall)%E3%80%81F%E5%80%BC(F-Measure)%E3%80%81ROC%E6%9B%B2%E7%BA%BF%E3%80%81PR%E6%9B%B2%E7%BA%BF/assets/bc0ca07b6b06f0e4971268c0a3c275de.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/csGituser/blogImages/Images/20181101095905294.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/csGituser/blogImages/Images/watermark%2Ctype_ZmFuZ3poZW5naGVpdGk%2Cshadow_10%2Ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xpYm9fTGVhcm5lcg%3D%3D%2Csize_16%2Ccolor_FFFFFF%2Ct_70.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/csGituser/blogImages/Images/bacb097a020855e9649756c49af85c08.png">
-<meta property="article:published_time" content="2023-07-13T08:58:37.680Z">
-<meta property="article:modified_time" content="2023-07-13T09:00:49.678Z">
+<meta property="article:published_time" content="2023-05-08T08:03:22.000Z">
+<meta property="article:modified_time" content="2023-07-13T09:02:11.218Z">
 <meta property="article:author" content="Museum">
+<meta property="article:tag" content="deep learning">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/csGituser/blogImages/Images/499dc06a1e23eceb8f975409c22ec364.png">
   
@@ -43,7 +44,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Museum</title>
+  <title>机器学习：准确率、召回率、F值、ROC曲线、PR曲线 - Museum</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -236,7 +237,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="机器学习：准确率、召回率、F值、ROC曲线、PR曲线"></span>
           
         </div>
 
@@ -247,8 +248,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-07-13 16:58" pubdate>
-          July 13, 2023 pm
+        <time datetime="2023-05-08 16:03" pubdate>
+          May 8, 2023 pm
         </time>
       </span>
     
@@ -315,7 +316,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header"></h1>
+            <h1 id="seo-header">机器学习：准确率、召回率、F值、ROC曲线、PR曲线</h1>
             
             
               <div class="markdown-body">
@@ -414,6 +415,34 @@ ROC（Receiver Operating Characteristic）曲线是以假正率（FP_rate）和�
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/deep-learning/" class="category-chain-item">deep learning</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/deep-learning/" class="print-no-link">#deep learning</a>
+      
+    </div>
   
 </div>
 
@@ -423,8 +452,8 @@ ROC（Receiver Operating Characteristic）曲线是以假正率（FP_rate）和�
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>http://csgituser.github.io/2023/07/13/机器学习：准确率(Precision)、召回率(Recall)、F值(F-Measure)、ROC曲线、PR曲线/</div>
+      <div>机器学习：准确率、召回率、F值、ROC曲线、PR曲线</div>
+      <div>http://csgituser.github.io/2023/05/08/机器学习：准确率(Precision)、召回率(Recall)、F值(F-Measure)、ROC曲线、PR曲线/</div>
     </div>
     <div class="license-meta">
       
@@ -436,7 +465,7 @@ ROC（Receiver Operating Characteristic）曲线是以假正率（FP_rate）和�
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>July 13, 2023</div>
+          <div>May 8, 2023</div>
         </div>
       
       
@@ -468,12 +497,18 @@ ROC（Receiver Operating Characteristic）曲线是以假正率（FP_rate）和�
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/05/08/multi-task-learning/" title="multi-task learning">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">multi-task learning</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/05/08/Python%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E6%8B%B7%E8%B4%9D/" title="Python中的变量拷贝">
-                        <span class="hidden-mobile">Python中的变量拷贝</span>
+                      <a href="/2023/03/08/pytorch%E6%A8%A1%E5%9E%8B%E4%BF%9D%E5%AD%98%E4%B8%8E%E5%8A%A0%E8%BD%BD/" title="pytorch模型保存与加载">
+                        <span class="hidden-mobile">pytorch模型保存与加载</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
